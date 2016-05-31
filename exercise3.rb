@@ -17,15 +17,15 @@ puts "What day is your birthday?"
 birth_day = gets.chomp
 
   if Time.now.month > birth_month.to_i
-    puts "You are born in #{2016 - age.to_i}."
+    puts "You are born in #{Time.now.year - age.to_i}."
   elsif Time.now.month == birth_month.to_i
     if Time.now.day > birth_day.to_i
-      puts "You are born in #{2016 - age.to_i}."
+      puts "You are born in #{Time.now.year - age.to_i}."
     elsif Time.now.day == birth_day.to_i
-      puts "You are born in #{2016 - age.to_i}"
+      puts "You are born in #{Time.now.year - age.to_i}"
     else
-      puts "You are born in #{(2016 - age.to_i) - 1}"
+      puts "You are born in #{(Time.now.year - age.to_i) - 1}"
     end
   else
-    puts "You are born in #{(2016 - age.to_i) - 1}."
+    puts "You are born in #{(Time.now.year - age.to_i) - 1}."
   end
