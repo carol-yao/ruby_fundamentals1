@@ -5,7 +5,9 @@ from_1_to_100.each do |number|
     puts "BitMaker"
   elsif number % 5 == 0
     puts "Maker"
-  else
+  elsif number % 3 == 0
     puts "Bit"
+  else
+    puts number
   end
 end
